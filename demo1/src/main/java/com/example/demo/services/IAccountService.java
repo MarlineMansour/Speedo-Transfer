@@ -1,6 +1,6 @@
 package com.example.demo.services;
-import com.example.demo.datddto.AccountDTO;
-import com.example.demo.datddto.CreateAccountDTO;
+import com.example.demo.DTO.AccountDTO;
+import com.example.demo.DTO.CreateAccountDTO;
 import com.example.demo.exception.ResourceNotFoundException;
 
 public interface IAccountService {

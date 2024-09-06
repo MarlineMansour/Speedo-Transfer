@@ -1,8 +1,8 @@
 package com.example.demo.entity;
 
-import com.example.demo.datddto.AccountDTO;
-import com.example.demo.datddto.enums.AccountCurrency;
-import com.example.demo.datddto.enums.AccountType;
+import com.example.demo.DTO.AccountDTO;
+import com.example.demo.DTO.enums.AccountCurrency;
+import com.example.demo.DTO.enums.AccountType;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Builder;

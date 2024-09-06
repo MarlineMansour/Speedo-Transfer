@@ -1,6 +1,6 @@
 package com.example.demo.controller;
-import com.example.demo.datddto.AccountDTO;
-import com.example.demo.datddto.CreateAccountDTO;
+import com.example.demo.DTO.AccountDTO;
+import com.example.demo.DTO.CreateAccountDTO;
 import com.example.demo.exception.ResourceNotFoundException;
 import com.example.demo.exception.response.ErrorDetails;
 import com.example.demo.services.IAccountService;

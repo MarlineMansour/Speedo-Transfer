@@ -1,8 +1,8 @@
 package com.example.demo.services;
-import com.example.demo.datddto.RegisterCustomerRequest;
-import com.example.demo.datddto.RegisterCustomerResponse;
-import com.example.demo.datddto.enums.AccountCurrency;
-import com.example.demo.datddto.enums.AccountType;
+import com.example.demo.DTO.RegisterCustomerRequest;
+import com.example.demo.DTO.RegisterCustomerResponse;
+import com.example.demo.DTO.enums.AccountCurrency;
+import com.example.demo.DTO.enums.AccountType;
 import com.example.demo.entity.Account;
 import com.example.demo.entity.Customer;
 import com.example.demo.exception.CustomerAlreadyExistException;

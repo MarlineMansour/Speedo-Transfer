@@ -1,12 +1,11 @@
 package com.example.demo.services;
 
-import com.example.demo.datddto.AccountDTO;
-import com.example.demo.datddto.CreateAccountDTO;
-import com.example.demo.datddto.enums.AccountCurrency;
-import com.example.demo.datddto.enums.AccountType;
+import com.example.demo.DTO.AccountDTO;
+import com.example.demo.DTO.CreateAccountDTO;
+import com.example.demo.DTO.enums.AccountCurrency;
+import com.example.demo.DTO.enums.AccountType;
 import com.example.demo.entity.Account;
 import com.example.demo.entity.Customer;
-import com.example.demo.exception.CustomerAlreadyExistException;
 import com.example.demo.exception.ResourceNotFoundException;
 import com.example.demo.repository.AccountRepository;
 import com.example.demo.repository.CustomerRepository;

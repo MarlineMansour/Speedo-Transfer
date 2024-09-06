@@ -1,5 +1,5 @@
 package com.example.demo.validation.confirmpass;
-import com.example.demo.datddto.RegisterCustomerRequest;
+import com.example.demo.DTO.RegisterCustomerRequest;
 import jakarta.validation.ConstraintValidator;
 import jakarta.validation.ConstraintValidatorContext;
 

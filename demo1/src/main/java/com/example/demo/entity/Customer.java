@@ -1,7 +1,7 @@
 package com.example.demo.entity;
 
-import com.example.demo.datddto.CustomerDTO;
-import com.example.demo.datddto.RegisterCustomerResponse;
+import com.example.demo.DTO.CustomerDTO;
+import com.example.demo.DTO.RegisterCustomerResponse;
 import jakarta.persistence.*;
 import lombok.*;
 import org.hibernate.annotations.CreationTimestamp;
