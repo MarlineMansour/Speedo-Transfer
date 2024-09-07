@@ -1,6 +1,6 @@
 package com.example.demo.controller;
-import com.example.demo.dto.LoginRequest;
-import com.example.demo.dto.LoginResponse;
+import com.example.demo.DTO.LoginRequest;
+import com.example.demo.DTO.LoginResponse;
 import com.example.demo.DTO.RegisterCustomerRequest;
 import com.example.demo.DTO.RegisterCustomerResponse;
 import com.example.demo.exception.CustomerAlreadyExistException;
