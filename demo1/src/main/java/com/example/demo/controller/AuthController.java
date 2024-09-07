@@ -1,4 +1,6 @@
 package com.example.demo.controller;
+import com.example.demo.dto.LoginRequest;
+import com.example.demo.dto.LoginResponse;
 import com.example.demo.DTO.RegisterCustomerRequest;
 import com.example.demo.DTO.RegisterCustomerResponse;
 import com.example.demo.exception.CustomerAlreadyExistException;
@@ -29,12 +31,12 @@ public class AuthController {
      return this.authService.register(body);
     }
     @Operation(summary = "Login and generate JWT")
-    @ApiResponse(responseCode = "200", content = {@Content(schema = @Schema(implementation = LoginResponseDTO.class), mediaType = "application/json")})
+    @ApiResponse(responseCode = "200", content = {@Content(schema = @Schema(implementation = LoginResponse.class), mediaType = "application/json")})
     @ApiResponse(responseCode = "401", content = {@Content(schema = @Schema(implementation = ErrorDetails.class), mediaType = "application/json")})
     @PostMapping("/login")
 
-    public LoginResponseDTO login(@RequestBody @Valid LoginRequestDTO loginRequestDTO) {
-        return this.authService.login(loginRequestDTO);
+    public LoginResponse login(@RequestBody @Valid LoginRequest loginRequest) {
+        return this.authService.login(loginRequest);
     }
     @GetMapping("/{email}")
     public boolean existEmail(@PathVariable String email){
