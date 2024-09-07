@@ -28,9 +28,13 @@ public class AuthController {
     public RegisterCustomerResponse postDemo( @Valid @RequestBody RegisterCustomerRequest body) throws CustomerAlreadyExistException {
      return this.authService.register(body);
     }
-    @GetMapping("/log")
-    public List<RegisterCustomerResponse> getList(){
-        return this.authService.getList();
+    @Operation(summary = "Login and generate JWT")
+    @ApiResponse(responseCode = "200", content = {@Content(schema = @Schema(implementation = LoginResponseDTO.class), mediaType = "application/json")})
+    @ApiResponse(responseCode = "401", content = {@Content(schema = @Schema(implementation = ErrorDetails.class), mediaType = "application/json")})
+    @PostMapping("/login")
+
+    public LoginResponseDTO login(@RequestBody @Valid LoginRequestDTO loginRequestDTO) {
+        return this.authService.login(loginRequestDTO);
     }
     @GetMapping("/{email}")
     public boolean existEmail(@PathVariable String email){
