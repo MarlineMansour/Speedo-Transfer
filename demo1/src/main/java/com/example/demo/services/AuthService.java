@@ -10,6 +10,7 @@ import com.example.demo.repository.AccountRepository;
 import com.example.demo.repository.CustomerRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
+import org.springframework.security.crypto.password.PasswordEncoder;
 
 import java.security.SecureRandom;
 import java.util.List;
@@ -26,7 +27,7 @@ public class AuthService implements IAuthService  {
         }
         Customer customer = Customer.builder()
                 .email(body.getEmail())
-                .password(body.getPassword())
+                .password(this.passwordEncoder.encode(body.getPassword()))
                 .name(body.getName())
                 .DateOfBirth(body.getDateOfBirth())
                 .Country(body.getCountry())
